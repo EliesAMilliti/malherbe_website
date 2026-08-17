@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#b85f42">
+  <meta name="description" content="Guest guide for Au Malherbe in Aix-en-Provence.">
+  <title>Au Malherbe · Guest Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">AM</span> Au Malherbe</a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a data-nav-file="index.html" href="index.html" data-i18n="nav.home"></a><a data-nav-file="arrival.html" href="arrival.html" data-i18n="nav.arrival"></a><a data-nav-file="apartment.html" href="apartment.html" data-i18n="nav.apartment"></a><a data-nav-file="recommendations.html" href="recommendations.html" data-i18n="nav.explore"></a><a data-nav-file="departure.html" href="departure.html" data-i18n="nav.departure"></a><a data-nav-file="contact.html" href="contact.html" data-i18n="nav.contact"></a>
+  </nav>
+  <div class="header-actions"><select class="lang-select" aria-label="Language"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option></select></div>
+</div></header>
+
+<main>
+  <section class="hero">
+    <div class="hero-photo" data-bg="assets/images/hero-residence.jpg" data-placeholder="Add hero-residence.jpg"></div>
+    <div class="container hero-content">
+      <div class="eyebrow" data-i18n="home.eyebrow"></div>
+      <h1 data-i18n="home.title"></h1>
+      <p class="hero-copy" data-i18n="home.subtitle"></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="arrival.html">🔑 <span data-i18n="nav.arrival"></span></a>
+        <button class="btn btn-secondary" type="button" data-open-qr>▦ <span data-i18n="common.qr"></span></button>
+        <button class="btn btn-secondary" type="button" data-share>↗ <span data-i18n="common.share"></span></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container quick-grid">
+    <a class="quick-card" href="arrival.html"><span class="quick-icon">🔑</span><strong data-i18n="home.arrival"></strong><span data-i18n="home.arrivalSub"></span></a>
+    <a class="quick-card" href="apartment.html"><span class="quick-icon">🏡</span><strong data-i18n="home.apartment"></strong><span data-i18n="home.apartmentSub"></span></a>
+    <a class="quick-card" href="recommendations.html"><span class="quick-icon">📍</span><strong data-i18n="home.explore"></strong><span data-i18n="home.exploreSub"></span></a>
+    <a class="quick-card" href="departure.html"><span class="quick-icon">👋</span><strong data-i18n="home.departure"></strong><span data-i18n="home.departureSub"></span></a>
+  </div>
+
+  <section class="section"><div class="container">
+    <div class="section-head"><div class="eyebrow" style="color:var(--terracotta-dark)" data-i18n="home.quickTitle"></div><h2 data-i18n="home.locationTitle"></h2><p data-i18n="home.locationText"></p></div>
+    <div class="grid-3">
+      <div class="card"><div class="icon-circle">🕑</div><h3 data-i18n="home.checkin"></h3><p data-config="checkIn"></p></div>
+      <div class="card"><div class="icon-circle">🕚</div><h3 data-i18n="home.checkout"></h3><p data-config="checkOut"></p></div>
+      <div class="card"><div class="icon-circle">👥</div><h3 data-i18n="home.guests"></h3><p data-i18n="home.host"></p></div>
+    </div>
+    <div class="button-row"><a class="btn btn-ghost" data-maps-home target="_blank" rel="noopener">📍 <span data-i18n="common.maps"></span></a></div>
+  </div></section>
+
+  <section class="section-tight"><div class="container">
+    <div class="section-head"><h2 data-i18n="home.photosTitle"></h2><p data-i18n="home.photosText"></p></div>
+    <div class="photo-grid">
+      <div class="photo-placeholder" data-bg="assets/images/living-room.jpg"><span>living-room.jpg</span></div>
+      <div style="display:grid;gap:16px"><div class="photo-placeholder small" data-bg="assets/images/bedroom.jpg"><span>bedroom.jpg</span></div><div class="photo-placeholder small" data-bg="assets/images/view-or-balcony.jpg"><span>view-or-balcony.jpg</span></div></div>
+    </div>
+  </div></section>
+</main>
+
+<footer class="site-footer"><div class="container footer-inner"><span data-i18n="footer.note"></span><span>Au Malherbe · 2026</span></div></footer>
+<nav class="mobile-nav"><a data-nav-file="index.html" href="index.html"><span>⌂</span><b data-i18n="nav.home"></b></a><a data-nav-file="arrival.html" href="arrival.html"><span>🔑</span><b data-i18n="nav.arrival"></b></a><a data-nav-file="recommendations.html" href="recommendations.html"><span>📍</span><b data-i18n="nav.explore"></b></a><a data-nav-file="departure.html" href="departure.html"><span>👋</span><b data-i18n="nav.departure"></b></a></nav>
+
+<div id="qr-modal" class="modal-backdrop" role="dialog" aria-modal="true"><div class="modal"><div class="modal-top"><h3 data-i18n="common.qr"></h3><button class="modal-close" data-close-qr aria-label="Close">×</button></div><div id="qr-code"></div><p class="muted">The QR automatically points to the live site URL after deployment.</p><button class="btn btn-outline" data-close-qr data-i18n="common.close"></button></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07aRUoTWHZQW48Qb/HT1BoZYNmrRY4R7A6XhgMxxhlvo4fKYLGuQHvxM5yT+nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="data/site-config.js"></script><script src="js/translations.js"></script><script src="js/app.js"></script>
+</body></html>
